@@ -1,4 +1,41 @@
+
+html {
+    background-color: brown;
+}
+
+
+
+
+
+
+
+
+
+/*
+#main {
+    display: flex;
+
+}
 #main-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: blue;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 2 0 auto;
+    max-width: 70%;
+    
 }
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 2 1 auto;
+}
+
+.flexitem {
+    background-color: aquamarine;
+    margin: 1rem;
+    padding: 10px;
+}
+
+*/

@@ -3,10 +3,40 @@ html {
     background-color: brown;
 }
 
+header {
+    width: 100%;
+}
 
+#main {
+    background-color: blue;
+    
+}
+#main-window {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: red;
+    padding: 10px;
+}
 
+#main-window .image-container img {
+    flex: 2;
+    max-width: 60%;
+    background-color: antiquewhite;
+    padding: 10px;
+}
 
+#main-window .start-box {
+    flex: 1;
+    padding: 10px;
+    background-color: greenyellow;
+}
 
+.start-box .start-box-content {
+    background-color: plum;
+}
 
 
 

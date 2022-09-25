@@ -6,11 +6,13 @@
 
 html {
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 body {
     display: block;
 }
+
+/* header and navigation */
 
 header {
     display: flex;
@@ -47,10 +49,12 @@ header nav {
 
 }
 
+/* learning section!!!!!!!!*/
+
 #learn {
     display: flex;
     padding: 32px 24px;
-    background-color: lightgray;
+    background-color: gainsboro;
     border: 1px solid black;
 }
 
@@ -91,6 +95,9 @@ header nav {
     padding: 8px
 }
 
+
+/* practice section!!!!!!! */
+
 #practice {
     display: flex;
     width: 100%;
@@ -100,12 +107,12 @@ header nav {
 #practice .col1 {
     min-width: 60%;
     padding: 32px 24px;
+    border: 1px solid lightgrey;
 
 }
 
 #practice .main-img-holder {
-    
-
+    margin-bottom: 24px;
 }
 
 #practice img {
@@ -113,18 +120,198 @@ header nav {
     height: auto;
 }
 
+#practice h1 {
+    margin: 0 10px;
+}
+#practice .quote {
+    font-size: 12px;
+    margin: 24px 10px;
+}
+
+#practice p {
+    margin: 0 10px;
+    font-size: 12px;
+
+}
+
 #practice .col2 {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: stretch;
     min-width: 40%;
 }
 
 #practice .campus {
     display: flex;
+    padding: 12px;
+    border: 1px solid lightgrey;
+    flex: 1;
 }
 
 #practice .campus-img {
-    width: 35%
+    max-width: 35%;
+    height: auto;
+    align-self: center;
 }
 
 #practice .campus-info {
+    font-size: 16px;
+    margin: 12px;
+    align-self: center;
 
+}
+
+.campus-info h3 {
+
+}
+
+.campus-info h4 {
+    font-size: 12px;
+    font-weight: 100;
+    margin: 8px 0
+}
+
+.campus-info a {
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size: 12px;
+}
+
+/* Courses Section!!!!!!!!*/
+
+#course {
+    width: 100%;
+    background-color: gainsboro;
+
+}
+
+#course h1 {
+    text-align: center;
+    padding-top: 32px;
+}
+
+#course .course-holder {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    padding: 32px;
+    width: auto;
+    font-size: 12px;
+
+}
+
+#course .course-box {
+    max-width: 30%;
+    margin: 10px;
+    background-color: white;
+}
+
+#course .box-img {
+    width: 100%;
+    height: auto;
+}
+
+#course img {
+    width: 100%;
+    height: auto;
+}
+
+#course .box-info {
+    padding: 8px;
+}
+
+#course h3 {
+    margin: 8px 0;
+}
+
+/* Thesis section !!!!!!!!*/
+
+#thesis {
+    width: 100%;
+    height: auto;
+}
+
+#thesis .title {
+    text-align: center;
+    padding: 32px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#thesis .thesis-section {
+    display: flex;
+}
+
+#thesis .col1 {
+    min-width: 60%;
+    padding: 0 24px;
+
+}
+
+#thesis .main-vid-holder {
+    margin-bottom: 24px;
+}
+
+#thesis img {
+    width: 100%;
+    height: auto;
+}
+
+#thesis h1 {
+    margin: 1 10px;
+}
+#thesis .quote {
+    font-size: 12px;
+    margin: 24px 0;
+}
+
+#thesis p {
+    font-size: 12px;
+
+}
+
+#thesis .col2 {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-width: 40%;
+}
+
+#thesis .campus {
+    display: flex;
+    padding: 0 12px;
+}
+
+#thesis .campus-img {
+    max-width: 35%;
+    height: auto;
+    align-self: center;
+}
+
+#thesis .campus-info {
+    font-size: 16px;
+    margin: 12px;
+    align-self: center;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+    border-top: 1px solid lightgray;
+}
+
+footer .copyright {
+    font-size: 12px;
+    margin: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin: 12px;
 }

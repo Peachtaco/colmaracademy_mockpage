@@ -308,7 +308,7 @@ footer a {
     font-size: 12px;
     margin: 12px;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1920px) {
     header .mobile {
         display: none;
     }
@@ -320,7 +320,7 @@ footer a {
         width: 100%;
     }
 
-    #learn .col2-mobile {
+    #practice .col2-mobile {
         display: none;
     }
 

@@ -21,14 +21,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
-
-
-    border-bottom: 1px solid black;
-
 }
 
-header .holder-logo{
+
+header .holder-logo {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 header .holder-logo .logo1 {
@@ -43,11 +43,10 @@ header .holder-logo .logo2 {
 header a {
     color: black;
     text-decoration: none;
-    padding: 8px
+    padding: 8px;
+    font-size: 16px;
 }
-header nav {
 
-}
 
 /* learning section!!!!!!!!*/
 
@@ -59,13 +58,12 @@ header nav {
 }
 
 #learn .img-holder {
-    width: 60%;
+    min-width: 60%;
     height: auto;
-    background-color: brown;
-    display: block;
+    align-self: center;
 }
 
-#learn .img-holder .banner-logo {
+#learn .img-holder img {
     width: 100%;
     height: auto;
 }
@@ -75,7 +73,6 @@ header nav {
     flex-flow: wrap column;
     justify-content: center;
     margin-left: 40px;
-
 }
 
 #learn h1 {
@@ -90,7 +87,7 @@ header nav {
 }
 
 #learn button {
-    background-color: dimgray;
+    background-color: grey;
     color: white;
     padding: 8px
 }
@@ -108,7 +105,6 @@ header nav {
     min-width: 60%;
     padding: 32px 24px;
     border: 1px solid lightgrey;
-
 }
 
 #practice .main-img-holder {
@@ -131,7 +127,6 @@ header nav {
 #practice p {
     margin: 0 10px;
     font-size: 12px;
-
 }
 
 #practice .col2 {
@@ -159,7 +154,6 @@ header nav {
     font-size: 16px;
     margin: 12px;
     align-self: center;
-
 }
 
 .campus-info h3 {
@@ -198,7 +192,6 @@ header nav {
     padding: 32px;
     width: auto;
     font-size: 12px;
-
 }
 
 #course .course-box {
@@ -314,4 +307,188 @@ footer a {
     color: black;
     font-size: 12px;
     margin: 12px;
+}
+@media screen and (max-width: 1920px) {
+    header .mobile {
+        display: none;
+    }
+
+    header .desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    #practice .col2-mobile {
+        display: none;
+    }
+
+    #course-mobile {
+        display: none;
+    }
+} 
+
+@media screen and (max-width: 640px) {
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%
+    }
+
+    header img {
+        align-self: center;
+    }
+
+    #learn {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        border: none;
+    }
+
+    #learn .img-holder {
+    }
+
+    #learn .text-holder {
+        align-self: center;
+        margin: 0;
+        padding: 32px 16px;
+    }
+
+    #learn button {
+        font-size: 24px;
+        padding: 20px;
+        border: none;
+    }
+
+    #practice {
+
+    }
+
+    #practice .col1 {
+        display: none;
+    }
+
+    #practice .col2 {
+        display: none;
+    }
+
+    #practice .col2-mobile {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    #practice .campus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: none;
+        padding-top: 30px;
+    }
+
+    #practice .campus-img {
+        max-width: 90%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    #practice img {
+        width: 100%;
+    }
+
+    #practice .campus-info {
+        font-size: 24px;
+        max-width: 80%;
+    }
+
+    #practice h3 {
+        font-weight: 600;
+    }
+
+    #practice h4 {
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    #practice a {
+        font-size: 20px;
+    }
+
+    #course {
+        display: none;
+    }
+
+    #course-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 16px;
+    }
+
+    #course-mobile h1 {
+        font-size: 36px;
+    }
+
+    #course-mobile .course-holder {
+        display: flex;
+        flex-direction: column;
+        padding: 1px;
+        margin: 15px;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+
+    #course-mobile .course-box {
+        padding: 24px;
+        margin: 12px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgrey;
+
+    }
+
+    #course-mobile p {
+        text-align: left;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    #thesis h1, .quote {
+        display: none;
+    }
+    
+    #thesis .col2 {
+        display: none;
+    }
+
+    footer .footer-links {
+        display: none;
+    }
 }
